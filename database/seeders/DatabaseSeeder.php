@@ -116,5 +116,6 @@ class DatabaseSeeder extends Seeder
         // ---- Review ----
         Review::create(['user_id' => $hersa->id, 'station_id' => $pc1->id, 'rating' => 5, 'comment' => 'PC lancar, internet stabil.']);
         Review::create(['user_id' => $budi->id,  'station_id' => $pc1->id, 'rating' => 4, 'comment' => 'Nyaman dan bersih.']);
+        $this->call(PeriodeSeeder::class);
     }
 }
