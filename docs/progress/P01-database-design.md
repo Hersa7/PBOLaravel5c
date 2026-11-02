@@ -33,7 +33,7 @@ Design and implement the database of **GameBook**, a gaming session booking appl
 
 ### J2: Migrations
 - **Status:** ✅ Done, 2026-10-31
-- **What:** Nine table migrations plus two pivot migrations (`game_station`, `addon_booking`), with foreign keys, cascade and restrict rules, and unique constraints.
+- **What:** Eight table migrations plus two pivot migrations (`game_station`, `addon_booking`), with foreign keys, cascade and restrict rules, and unique constraints.
 - **Proof:** [`database/migrations`](https://github.com/Hersa7/PBOLaravel5c/tree/feature/database-relations/database/migrations)
 - **Verified:** `php artisan migrate:fresh --seed` runs without errors on MySQL.
 
